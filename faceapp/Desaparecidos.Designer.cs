@@ -54,6 +54,7 @@
             this.tableAdapterManager = new faceapp.DataSet1TableAdapters.TableAdapterManager();
             this.usuariosTableAdapter = new faceapp.DataSet1TableAdapters.UsuariosTableAdapter();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidosBindingNavigator)).BeginInit();
             this.desaparecidosBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.desaparecidosBindingSource)).BeginInit();
@@ -274,11 +275,25 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(37)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(248, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(285, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Registra tu Persona Desaparecida";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Desaparecidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 305);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.desaparecidosDataGridView);
             this.Controls.Add(this.desaparecidosBindingNavigator);
@@ -327,5 +342,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Label label1;
     }
 }

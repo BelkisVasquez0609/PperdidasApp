@@ -50,6 +50,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Vfecha1ToolStripTextBox = new System.Windows.Forms.DateTimePicker();
             this.fecha2ToolStripTextBox = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteEncontradoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteEncontradoDataGridView)).BeginInit();
@@ -188,7 +189,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(11, 11);
+            this.label2.Location = new System.Drawing.Point(230, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 18);
             this.label2.TabIndex = 26;
@@ -199,7 +200,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(294, 12);
+            this.label1.Location = new System.Drawing.Point(415, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 25;
@@ -210,9 +211,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(586, 5);
+            this.button1.Location = new System.Drawing.Point(634, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 30);
+            this.button1.Size = new System.Drawing.Size(99, 30);
             this.button1.TabIndex = 24;
             this.button1.Text = "BUSCAR";
             this.button1.UseVisualStyleBackColor = true;
@@ -220,17 +221,28 @@
             // 
             // Vfecha1ToolStripTextBox
             // 
-            this.Vfecha1ToolStripTextBox.Location = new System.Drawing.Point(94, 12);
+            this.Vfecha1ToolStripTextBox.Location = new System.Drawing.Point(306, 11);
             this.Vfecha1ToolStripTextBox.Name = "Vfecha1ToolStripTextBox";
-            this.Vfecha1ToolStripTextBox.Size = new System.Drawing.Size(174, 20);
+            this.Vfecha1ToolStripTextBox.Size = new System.Drawing.Size(103, 20);
             this.Vfecha1ToolStripTextBox.TabIndex = 23;
             // 
             // fecha2ToolStripTextBox
             // 
-            this.fecha2ToolStripTextBox.Location = new System.Drawing.Point(377, 12);
+            this.fecha2ToolStripTextBox.Location = new System.Drawing.Point(487, 11);
             this.fecha2ToolStripTextBox.Name = "fecha2ToolStripTextBox";
-            this.fecha2ToolStripTextBox.Size = new System.Drawing.Size(191, 20);
+            this.fecha2ToolStripTextBox.Size = new System.Drawing.Size(115, 20);
             this.fecha2ToolStripTextBox.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(12, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 18);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Personas Encontradas";
             // 
             // ReporteEncontrados
             // 
@@ -238,6 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -280,5 +293,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker Vfecha1ToolStripTextBox;
         private System.Windows.Forms.DateTimePicker fecha2ToolStripTextBox;
+        private System.Windows.Forms.Label label3;
     }
 }

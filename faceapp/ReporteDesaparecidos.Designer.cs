@@ -50,6 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteDesaparecidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteDesaparecidoDataGridView)).BeginInit();
@@ -170,16 +171,16 @@
             // 
             // fecha2ToolStripTextBox
             // 
-            this.fecha2ToolStripTextBox.Location = new System.Drawing.Point(375, 12);
+            this.fecha2ToolStripTextBox.Location = new System.Drawing.Point(498, 12);
             this.fecha2ToolStripTextBox.Name = "fecha2ToolStripTextBox";
-            this.fecha2ToolStripTextBox.Size = new System.Drawing.Size(191, 20);
+            this.fecha2ToolStripTextBox.Size = new System.Drawing.Size(134, 20);
             this.fecha2ToolStripTextBox.TabIndex = 3;
             // 
             // fecha1ToolStripTextBox
             // 
-            this.fecha1ToolStripTextBox.Location = new System.Drawing.Point(92, 12);
+            this.fecha1ToolStripTextBox.Location = new System.Drawing.Point(291, 15);
             this.fecha1ToolStripTextBox.Name = "fecha1ToolStripTextBox";
-            this.fecha1ToolStripTextBox.Size = new System.Drawing.Size(174, 20);
+            this.fecha1ToolStripTextBox.Size = new System.Drawing.Size(131, 20);
             this.fecha1ToolStripTextBox.TabIndex = 4;
             // 
             // button1
@@ -187,9 +188,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(584, 5);
+            this.button1.Location = new System.Drawing.Point(638, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 30);
+            this.button1.Size = new System.Drawing.Size(93, 30);
             this.button1.TabIndex = 5;
             this.button1.Text = "BUSCAR";
             this.button1.UseVisualStyleBackColor = true;
@@ -200,7 +201,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(292, 12);
+            this.label1.Location = new System.Drawing.Point(426, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 18);
             this.label1.TabIndex = 6;
@@ -209,13 +210,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(9, 11);
+            this.label2.Location = new System.Drawing.Point(12, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 18);
+            this.label2.Size = new System.Drawing.Size(197, 18);
             this.label2.TabIndex = 7;
-            this.label2.Text = "DESDE:";
+            this.label2.Text = "Personas Desaparecidas";
             // 
             // btnCerrar
             // 
@@ -231,12 +232,24 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(215, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 18);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "DESDE:";
+            // 
             // ReporteDesaparecidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(27)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -279,5 +292,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Label label3;
     }
 }

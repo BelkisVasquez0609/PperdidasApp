@@ -54,6 +54,7 @@ namespace faceapp
             label6.Text = Math.Round(Convert.ToDouble(z.getsimilitud(idsimilar)),2).ToString() + "%";
             label8.Text = z.GetUbication(idsimilar);
             label10.Text = Convert.ToDateTime(z.GetHorabyid(idsimilar)).ToLongTimeString();
+            label11.Text = Convert.ToDateTime(z.GetHorabyid(idsimilar)).ToShortDateString();
             if (iddesaparecido > 0)
             {
                 GetImagen1();
