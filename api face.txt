@@ -1,0 +1,1 @@
+"https://vecindario-faceapi.cognitiveservices.azure.com/", "cdb9e184342f419d8e072758779b066d"
